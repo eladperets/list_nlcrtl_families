@@ -3,8 +3,8 @@
 CC=gcc
 
 list_multicast_ids:
-	rm -f ./list_multicast_ids
-	$(CC) ./list_multicast_ids.c `pkg-config --cflags --libs libnl-genl-3.0` -o list_multicast_ids
+	rm -f ./list_nlcrtl_families
+	$(CC) ./list_nlcrtl_families.c `pkg-config --cflags --libs libnl-genl-3.0` -o list_multicast_ids
 
 all: list_multicast_ids 
 
